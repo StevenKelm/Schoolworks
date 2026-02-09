@@ -230,7 +230,7 @@ public class AufgabePogSKarraylist {
         sc.nextLine();
     }
 
-    public static void punktzahlAendern() {
+    public static void punktzahlAendern() {               // Methode um die Punktzahl zu ändern
         int auswahlAdd = sc.nextInt();
         int auswahlAdded;
         switch (auswahlAdd) {
@@ -313,4 +313,5 @@ public class AufgabePogSKarraylist {
         sc.close();
         System.exit(0);
     }
+
 }
