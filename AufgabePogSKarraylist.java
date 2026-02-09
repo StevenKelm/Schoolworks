@@ -82,6 +82,8 @@ public class AufgabePogSKarraylist {
                 break;
 
             case 7:
+                System.out.println("Beende das Programm...");
+                beenden();
                 break;
         }
     }
@@ -94,7 +96,7 @@ public class AufgabePogSKarraylist {
         if (punktzahl < 0 || punktzahl > 100) {        // Überprüfung, ob die Zahl in den angegebenen Bereich liegt
             System.out.println("Außerhalb der angegebenen Ziffern." +
                     "\n Probier es erneut.");
-            punktzahlEingabe();
+           return punktzahlEingabe();
         }
 
         return punktzahl;
@@ -230,7 +232,7 @@ public class AufgabePogSKarraylist {
         sc.nextLine();
     }
 
-    public static void punktzahlAendern() {               // Methode um die Punktzahl zu ändern
+    public static void punktzahlAendern() {             // Methode um die Punktzahl zu ändern
         int auswahlAdd = sc.nextInt();
         int auswahlAdded;
         switch (auswahlAdd) {
@@ -309,9 +311,8 @@ public class AufgabePogSKarraylist {
     }
 
     public static void beenden() {
-        System.out.println("Beende das Programm...");
+
         sc.close();
         System.exit(0);
     }
-
 }
